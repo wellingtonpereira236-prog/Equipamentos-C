@@ -1,0 +1,2 @@
+# Equipamentos-C
+Equipamentos/Barramentos
