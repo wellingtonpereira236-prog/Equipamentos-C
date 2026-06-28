@@ -148,6 +148,7 @@
   mark { background: #f59e0b33; color: #f59e0b; border-radius: 2px; padding: 0 1px; }
 </style>
 </head>
+ 
 <body>
 
 <header>
@@ -279,5 +280,14 @@ function gridCell(label, value) {
   </div>`;
 }
 </script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js")
+    .then(() => console.log("Service Worker ativo"))
+    .catch(err => console.log("Erro:", err));
+}
+</script>
+ 
 </body>
 </html>
